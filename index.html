@@ -1,0 +1,1184 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>91cao官网-实用功能与内容导航</title>
+<meta name="description" content="91cao官网是一个面向日常实用工具与内容导航的中文站点，汇集生活服务入口、使用指南与体验答疑。这里按功能场景整理清晰路径，方便快速找到所需栏目，了解各项服务的适用范围、操作步骤与常见问题，帮助新老用户少走弯路。">
+<meta name="keywords" content="91cao官网">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231f6f5c'/%3E%3Cpath d='M18 40c6-14 14-20 28-22-4 14-12 22-26 26z' fill='%23f0c96a'/%3E%3Ccircle cx='24' cy='24' r='4' fill='%23fff'/%3E%3C/svg%3E">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "91cao官网",
+  "description": "面向日常实用工具与内容导航的中文站点，提供功能入口、使用指南与体验答疑。",
+  "inLanguage": "zh-CN"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "生活服务导航入口打不开怎么排查？",
+      "acceptedAnswer": {"@type": "Answer", "text": "先确认浏览器为近两年内的版本，再检查网络是否屏蔽了跳转域名。多数入口在点击后会打开新标签页，若被拦截需在地址栏允许弹窗。2026年10月的入口清单中，有4个生活服务链接更换了域名，旧地址会跳转到提示页而非直接失效。"}
+    },
+    {
+      "@type": "Question",
+      "name": "使用指南里的操作步骤适用于手机吗？",
+      "acceptedAnswer": {"@type": "Answer", "text": "步骤本身按桌面端书写，手机端差异集中在菜单收起与上传位置。分类筛选在手机上折叠为顶部下拉框，上传按钮位于表单底部。触摸操作时，长按条目可呼出复制链接的选项。"}
+    },
+    {
+      "@type": "Question",
+      "name": "分类索引的条目多久更新一次？",
+      "acceptedAnswer": {"@type": "Answer", "text": "分类索引由编辑在每周三集中核对，单条失效或迁移会在两天内标记。版本记录显示，10月共调整过37条，其中21条是链接替换，9条为名称更正，7条是分类合并。"}
+    },
+    {
+      "@type": "Question",
+      "name": "深度解析里的判断会不会过时？",
+      "acceptedAnswer": {"@type": "Answer", "text": "解析段落标注了判断依据的日期，规则类内容以2026年11月8日前的公开说明为准。涉及第三方政策的部分，若说明在后续调整，解析会保留旧结论并加上时间戳，方便读者自行对照。"}
+    },
+    {
+      "@type": "Question",
+      "name": "评论和体验反馈怎么提交？",
+      "acceptedAnswer": {"@type": "Answer", "text": "页面底部设有一行反馈框，填写条目名称与遇到的情况即可。编辑会在工作日整理，具体条目问题一般两天内回应。涉及账号信息的描述请避免写明文，只说明现象即可。"}
+    }
+  ]
+}
+</script>
+<style>
+:root{
+  --green:#1f6f5c;
+  --green-dark:#15503f;
+  --green-soft:#e6f1ed;
+  --gold:#c79a3c;
+  --gold-soft:#faf1dc;
+  --ink:#1d2724;
+  --ink-2:#41504b;
+  --ink-3:#6c7a75;
+  --line:#d8e2dd;
+  --bg:#f7faf8;
+  --white:#ffffff;
+  --radius:12px;
+  --radius-s:8px;
+  --shadow:0 2px 10px rgba(29,39,36,.07);
+  --shadow-hover:0 6px 18px rgba(29,39,36,.11);
+  --space:20px;
+  --font:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  --ann-h:40px;
+  --head-h:64px;
+  --stick:calc(var(--ann-h) + var(--head-h));
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--stick) + 14px)}
+body{
+  font-family:var(--font);
+  color:var(--ink);
+  background:var(--bg);
+  line-height:1.75;
+  font-size:16px;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:var(--green-dark);text-decoration:none}
+a:hover{text-decoration:underline}
+img{max-width:100%;display:block}
+h1,h2,h3{line-height:1.35;font-weight:700;color:var(--ink)}
+h1{font-size:2.1rem}
+h2{font-size:1.5rem}
+h3{font-size:1.1rem}
+p{margin-bottom:.85em}
+ul,ol{padding-left:1.3em}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+.sticky-bar{position:sticky;top:0;z-index:60}
+
+/* 公告条 */
+.announce{
+  height:var(--ann-h);
+  background:var(--green-dark);
+  color:#eaf4ef;
+  display:flex;align-items:center;
+  font-size:.85rem;
+  letter-spacing:.02em;
+}
+.announce .wrap{display:flex;align-items:center;gap:10px;flex-wrap:nowrap;overflow:hidden;width:100%}
+.announce .tag{
+  background:var(--gold);color:#2c2208;font-weight:700;
+  padding:1px 9px;border-radius:99px;font-size:.75rem;flex:none;
+}
+.announce .txt{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.announce strong{font-weight:700;color:#fff}
+
+/* 页头 */
+.header{
+  height:var(--head-h);
+  background:rgba(255,255,255,.96);
+  backdrop-filter:blur(6px);
+  border-bottom:1px solid var(--line);
+  display:flex;align-items:center;
+  transition:box-shadow .2s;
+}
+.header.scrolled{box-shadow:var(--shadow)}
+.header .wrap{display:flex;align-items:center;gap:18px;width:100%}
+.brand{display:flex;align-items:center;gap:9px;flex:none}
+.brand svg{width:34px;height:34px;flex:none}
+.brand .bname{font-size:1.18rem;font-weight:800;color:var(--green-dark);letter-spacing:.01em}
+.nav{display:flex;gap:4px;margin-left:8px;flex-wrap:wrap}
+.nav a{
+  font-size:.9rem;color:var(--ink-2);padding:5px 10px;border-radius:99px;
+  transition:background .18s,color .18s;
+}
+.nav a:hover,.nav a:focus-visible{background:var(--green-soft);color:var(--green-dark);text-decoration:none;outline:none}
+.nav a:focus-visible{box-shadow:0 0 0 2px var(--green)}
+.head-actions{margin-left:auto;display:flex;align-items:center;gap:10px}
+.search-box{position:relative;display:flex;align-items:center}
+.search-box input{
+  border:1px solid var(--line);border-radius:99px;
+  padding:7px 34px 7px 14px;font-size:.85rem;width:190px;
+  font-family:var(--font);color:var(--ink);background:var(--bg);
+  transition:border-color .18s,width .18s;
+}
+.search-box input:focus{outline:none;border-color:var(--green);width:220px;background:#fff}
+.search-box button{
+  position:absolute;right:4px;top:50%;transform:translateY(-50%);
+  border:none;background:transparent;cursor:pointer;padding:5px;color:var(--ink-3);
+  border-radius:50%;display:flex;
+}
+.search-box button:focus-visible{outline:2px solid var(--green)}
+.search-box svg{width:16px;height:16px}
+.menu-btn{
+  display:none;border:1px solid var(--line);background:#fff;border-radius:var(--radius-s);
+  padding:6px 8px;cursor:pointer;color:var(--ink-2);
+}
+.menu-btn:focus-visible{outline:2px solid var(--green)}
+.search-feedback{
+  font-size:.8rem;color:var(--gold);position:absolute;top:calc(100% + 6px);left:0;right:0;
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius-s);
+  padding:8px 10px;box-shadow:var(--shadow);display:none;z-index:70;
+}
+.search-feedback.show{display:block}
+
+/* 首屏 */
+.hero{
+  position:relative;overflow:hidden;
+  background:linear-gradient(160deg,#eef6f1 0%,#f9fbfa 55%,#fbf6ea 100%);
+  border-bottom:1px solid var(--line);
+}
+.hero-inner{
+  display:grid;grid-template-columns:1.15fr .85fr;gap:40px;
+  align-items:center;padding:56px 0 58px;
+}
+.hero .kick{
+  display:inline-flex;align-items:center;gap:7px;
+  font-size:.8rem;color:var(--green-dark);background:#fff;
+  border:1px solid var(--line);padding:4px 12px;border-radius:99px;margin-bottom:18px;
+}
+.hero .kick i{width:7px;height:7px;border-radius:50%;background:var(--green);display:inline-block}
+.hero p.lede{font-size:1.02rem;color:var(--ink-2);max-width:44ch;margin:16px 0 24px}
+.hero-btns{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:26px}
+.btn{
+  display:inline-flex;align-items:center;gap:7px;font-size:.92rem;font-weight:600;
+  padding:10px 20px;border-radius:var(--radius-s);border:1px solid transparent;
+  transition:transform .16s,box-shadow .16s,background .16s;cursor:pointer;
+}
+.btn:hover{text-decoration:none;transform:translateY(-2px)}
+.btn-primary{background:var(--green);color:#fff;box-shadow:0 3px 10px rgba(31,111,92,.25)}
+.btn-primary:hover{background:var(--green-dark);box-shadow:var(--shadow-hover)}
+.btn-ghost{background:#fff;color:var(--green-dark);border-color:var(--line)}
+.btn-ghost:hover{border-color:var(--green);box-shadow:var(--shadow)}
+.hero-stats{display:flex;gap:28px;flex-wrap:wrap}
+.hero-stats .st b{display:block;font-size:1.35rem;color:var(--green-dark);line-height:1.2}
+.hero-stats .st span{font-size:.78rem;color:var(--ink-3)}
+.hero-visual{position:relative;height:100%;min-height:300px}
+.hero-visual svg{width:100%;height:auto;max-height:360px}
+.hero-visual .float-card{
+  position:absolute;background:#fff;border:1px solid var(--line);
+  border-radius:var(--radius-s);box-shadow:var(--shadow);
+  font-size:.75rem;padding:7px 11px;color:var(--ink-2);white-space:nowrap;
+}
+.fc1{top:8%;left:2%;animation:bob 6s ease-in-out infinite}
+.fc2{bottom:14%;right:0;animation:bob 7s ease-in-out infinite reverse}
+.fc3{bottom:44%;left:-2%;animation:bob 8s ease-in-out infinite}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+
+/* 主内容三栏门户 */
+.layout{
+  display:grid;
+  grid-template-columns:200px minmax(0,1fr) 280px;
+  gap:32px;
+  align-items:start;
+  padding:44px 0 60px;
+}
+.side-nav{position:sticky;top:calc(var(--stick) + 18px)}
+.side-nav .sn-title{font-size:.78rem;color:var(--ink-3);letter-spacing:.08em;margin-bottom:10px;font-weight:700}
+.side-nav ul{list-style:none;padding:0}
+.side-nav li{margin-bottom:2px}
+.side-nav a{
+  display:block;font-size:.87rem;color:var(--ink-2);
+  padding:6px 12px;border-left:2px solid transparent;border-radius:0 var(--radius-s) var(--radius-s) 0;
+  transition:background .16s,color .16s,border-color .16s;
+}
+.side-nav a:hover{background:var(--green-soft);text-decoration:none;color:var(--green-dark)}
+.side-nav a.active{color:var(--green-dark);font-weight:700;border-left-color:var(--green);background:var(--green-soft)}
+.side-nav a:focus-visible{outline:2px solid var(--green);outline-offset:-2px}
+
+.section{margin-bottom:52px;scroll-margin-top:calc(var(--stick) + 16px)}
+.section-head{display:flex;align-items:baseline;gap:12px;margin-bottom:6px;flex-wrap:wrap}
+.section-head h2{font-size:1.38rem}
+.section-head .sub{font-size:.8rem;color:var(--ink-3)}
+.section-desc{color:var(--ink-2);font-size:.92rem;margin-bottom:18px;max-width:72ch}
+
+/* 卡片与网格 */
+.grid-3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.card{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+  padding:18px;box-shadow:var(--shadow);transition:transform .16s,box-shadow .16s,border-color .16s;
+}
+.card:hover{transform:translateY(-3px);box-shadow:var(--shadow-hover);border-color:#c3d6cf}
+.card h3{font-size:1rem;margin-bottom:6px}
+.card h3 a{color:var(--ink)}
+.card h3 a:hover{color:var(--green-dark);text-decoration:none}
+.card p{font-size:.85rem;color:var(--ink-2);margin-bottom:8px}
+.card .meta{font-size:.74rem;color:var(--ink-3);display:flex;gap:10px;flex-wrap:wrap}
+.card .meta b{color:var(--green-dark);font-weight:600}
+.pill{display:inline-block;font-size:.72rem;background:var(--green-soft);color:var(--green-dark);padding:2px 9px;border-radius:99px;margin-bottom:10px}
+.pill.gold{background:var(--gold-soft);color:#7a5a15}
+.card-img{border-radius:var(--radius-s);overflow:hidden;margin-bottom:12px;aspect-ratio:16/9}
+.card-img img{width:100%;height:100%;object-fit:cover}
+
+/* 紧凑列表 */
+.list-compact{list-style:none;padding:0;border-top:1px solid var(--line)}
+.list-compact li{
+  display:grid;grid-template-columns:64px 1fr auto;gap:12px;align-items:baseline;
+  padding:12px 4px;border-bottom:1px solid var(--line);
+}
+.list-compact .date{font-size:.75rem;color:var(--ink-3);font-variant-numeric:tabular-nums}
+.list-compact .t{font-size:.92rem;color:var(--ink)}
+.list-compact .t a{color:var(--ink)}
+.list-compact .t a:hover{color:var(--green-dark)}
+.list-compact .tp{font-size:.72rem;color:var(--ink-3);white-space:nowrap}
+.list-compact li:hover{background:#fbfdfc}
+
+/* 分类索引 */
+.tag-index{display:flex;flex-wrap:wrap;gap:9px}
+.tag-index a{
+  font-size:.85rem;background:#fff;border:1px solid var(--line);
+  padding:7px 14px;border-radius:99px;color:var(--ink-2);
+  transition:background .16s,border-color .16s,color .16s;
+}
+.tag-index a:hover{background:var(--green);color:#fff;border-color:var(--green);text-decoration:none}
+.tag-index a .n{font-size:.72rem;color:var(--ink-3);margin-left:4px}
+.tag-index a:hover .n{color:#d8efe8}
+
+/* 深度解析 */
+.deep{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;box-shadow:var(--shadow)}
+.deep h3{font-size:1.08rem;margin:24px 0 8px;color:var(--green-dark)}
+.deep h3:first-of-type{margin-top:6px}
+.deep p{font-size:.93rem;color:var(--ink-2)}
+.deep .lead{font-size:1rem;color:var(--ink);border-left:3px solid var(--gold);padding-left:14px;margin-bottom:18px}
+.deep ul,.deep ol{font-size:.9rem;color:var(--ink-2);margin-bottom:14px}
+.deep li{margin-bottom:5px}
+.judge-box{
+  border:1px dashed #bfd5cc;background:#f4faf7;border-radius:var(--radius-s);
+  padding:14px 16px;margin:14px 0;font-size:.88rem;color:var(--ink-2);
+}
+.judge-box b{color:var(--green-dark)}
+table.cmp{width:100%;border-collapse:collapse;font-size:.84rem;margin:12px 0;background:#fff}
+table.cmp th,table.cmp td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+table.cmp th{background:var(--green-soft);color:var(--green-dark);font-weight:700}
+table.cmp td{color:var(--ink-2)}
+
+/* 步骤 */
+.steps{counter-reset:st;list-style:none;padding:0;display:grid;gap:12px}
+.steps li{
+  counter-increment:st;background:#fff;border:1px solid var(--line);border-radius:var(--radius-s);
+  padding:14px 16px 14px 54px;position:relative;font-size:.88rem;color:var(--ink-2);
+}
+.steps li::before{
+  content:counter(st);position:absolute;left:14px;top:13px;
+  width:26px;height:26px;border-radius:50%;background:var(--green);color:#fff;
+  font-size:.8rem;font-weight:700;display:flex;align-items:center;justify-content:center;
+}
+.steps li b{color:var(--ink)}
+
+/* 对照面板 */
+.panel-pair{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.panel{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:18px}
+.panel h3{font-size:.98rem;margin-bottom:10px;display:flex;align-items:center;gap:8px}
+.panel h3 .dot{width:9px;height:9px;border-radius:50%;background:var(--green);display:inline-block}
+.panel.warn h3 .dot{background:var(--gold)}
+.panel ul{padding-left:18px;font-size:.86rem;color:var(--ink-2)}
+.panel li{margin-bottom:5px}
+
+/* 时间线 */
+.timeline{list-style:none;padding:0;position:relative;margin-left:6px}
+.timeline::before{content:"";position:absolute;left:6px;top:6px;bottom:6px;width:2px;background:var(--line)}
+.timeline li{position:relative;padding:0 0 16px 28px;font-size:.86rem;color:var(--ink-2)}
+.timeline li::before{
+  content:"";position:absolute;left:1px;top:7px;width:12px;height:12px;border-radius:50%;
+  background:#fff;border:2px solid var(--green);
+}
+.timeline li b{color:var(--ink)}
+.timeline .tl-date{font-size:.74rem;color:var(--ink-3);font-variant-numeric:tabular-nums}
+
+/* 引语 / 证言 */
+.quote{
+  background:var(--gold-soft);border-left:4px solid var(--gold);border-radius:0 var(--radius-s) var(--radius-s) 0;
+  padding:16px 18px;font-size:.9rem;color:#57451b;
+}
+.quote cite{display:block;font-style:normal;font-size:.76rem;color:#8a6f30;margin-top:7px}
+
+/* FAQ */
+.faq details{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius-s);
+  margin-bottom:10px;overflow:hidden;
+}
+.faq summary{
+  cursor:pointer;padding:13px 16px;font-size:.92rem;font-weight:600;color:var(--ink);
+  list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px;
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{
+  content:"+";font-size:1.1rem;color:var(--green);flex:none;transition:transform .2s;
+}
+.faq details[open] summary::after{content:"−"}
+.faq summary:focus-visible{outline:2px solid var(--green);outline-offset:-2px}
+.faq .ans{padding:0 16px 14px;font-size:.86rem;color:var(--ink-2)}
+.faq .ans p{margin-bottom:.5em}
+
+/* 评论 */
+.cmt{display:grid;gap:12px}
+.cmt-item{background:#fff;border:1px solid var(--line);border-radius:var(--radius-s);padding:14px 16px}
+.cmt-head{display:flex;align-items:center;gap:9px;margin-bottom:6px}
+.avatar{
+  width:28px;height:28px;border-radius:50%;background:var(--green-soft);color:var(--green-dark);
+  font-size:.76rem;font-weight:700;display:flex;align-items:center;justify-content:center;flex:none;
+}
+.cmt-name{font-size:.82rem;font-weight:600;color:var(--ink)}
+.cmt-time{font-size:.72rem;color:var(--ink-3);margin-left:auto;font-variant-numeric:tabular-nums}
+.cmt-body{font-size:.86rem;color:var(--ink-2)}
+.cmt-body b{color:var(--ink)}
+
+/* 侧栏 */
+.side{display:grid;gap:20px}
+.side .box{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:18px;box-shadow:var(--shadow)}
+.side h3{font-size:.92rem;margin-bottom:12px;display:flex;align-items:center;gap:7px}
+.side h3::before{content:"";width:4px;height:15px;border-radius:2px;background:var(--green);display:inline-block}
+.side ol,.side ul{padding-left:18px;font-size:.84rem;color:var(--ink-2)}
+.side li{margin-bottom:7px}
+.side li a{color:var(--ink-2)}
+.side li a:hover{color:var(--green-dark)}
+.rank-num{font-weight:800;color:var(--green);margin-right:4px;font-size:.8rem}
+.side .notice{font-size:.78rem;color:var(--ink-3);line-height:1.6}
+.side .rel-tags{display:flex;flex-wrap:wrap;gap:7px}
+.side .rel-tags a{
+  font-size:.76rem;background:var(--bg);border:1px solid var(--line);
+  padding:4px 10px;border-radius:99px;color:var(--ink-2);
+}
+.side .rel-tags a:hover{background:var(--green-soft);border-color:#bcd6cd;text-decoration:none}
+
+/* 杂项 */
+.info-band{
+  background:linear-gradient(110deg,var(--green-soft),#f9f6ec);
+  border:1px solid #cfe2da;border-radius:var(--radius);padding:20px 22px;
+}
+.info-band h3{font-size:.98rem;margin-bottom:8px}
+.info-band p{font-size:.86rem;color:var(--ink-2);margin-bottom:0}
+
+/* 页脚 */
+.footer{background:#16302a;color:#c8d8d2;border-top:1px solid #0f231e;padding:44px 0 24px;margin-top:20px}
+.footer .f-top{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:28px;margin-bottom:32px}
+.footer .fbrand{display:flex;align-items:center;gap:9px;margin-bottom:12px}
+.footer .fbrand svg{width:30px;height:30px}
+.footer .fbrand span{font-size:1.1rem;font-weight:800;color:#fff}
+.footer .fpos{font-size:.82rem;color:#9db7af;max-width:30ch;line-height:1.7}
+.footer h4{color:#fff;font-size:.86rem;margin-bottom:10px;letter-spacing:.03em}
+.footer ul{list-style:none;padding:0}
+.footer li{margin-bottom:6px}
+.footer li a{font-size:.82rem;color:#a9c3ba}
+.footer li a:hover{color:#fff}
+.footer .f-note{font-size:.74rem;color:#8aa69d;border-top:1px solid #24443c;padding-top:16px;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+.footer .f-note .dis{max-width:62ch;line-height:1.6}
+
+/* 回到顶部 */
+#toTop{
+  position:fixed;right:18px;bottom:22px;z-index:80;
+  width:42px;height:42px;border-radius:50%;border:1px solid var(--line);
+  background:#fff;color:var(--green-dark);cursor:pointer;box-shadow:var(--shadow);
+  display:none;align-items:center;justify-content:center;
+  transition:transform .16s,box-shadow .16s;
+}
+#toTop.show{display:flex}
+#toTop:hover{transform:translateY(-3px);box-shadow:var(--shadow-hover)}
+#toTop:focus-visible{outline:2px solid var(--green)}
+
+/* 平板 */
+@media (max-width:1024px){
+  .layout{grid-template-columns:minmax(0,1fr) 260px;gap:24px}
+  .side-nav{display:none}
+  .hero-inner{grid-template-columns:1fr .8fr;gap:24px}
+  .grid-3{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .footer .f-top{grid-template-columns:1fr 1fr}
+}
+/* 手机 */
+@media (max-width:760px){
+  :root{--ann-h:36px;--head-h:58px}
+  h1{font-size:1.55rem}
+  .wrap{padding:0 16px}
+  .nav{
+    display:none;position:absolute;top:100%;left:0;right:0;
+    background:#fff;border-bottom:1px solid var(--line);
+    padding:10px 16px;box-shadow:var(--shadow);
+    flex-direction:column;gap:2px;
+  }
+  .nav.open{display:flex}
+  .nav a{padding:9px 10px;border-radius:var(--radius-s)}
+  .header .wrap{position:relative}
+  .menu-btn{display:flex;align-items:center;justify-content:center;margin-left:auto;order:2}
+  .head-actions{margin-left:0;order:1}
+  .search-box input{width:130px}
+  .search-box input:focus{width:150px}
+  .brand .bname{font-size:1.02rem}
+  .hero-inner{grid-template-columns:1fr;padding:36px 0 40px}
+  .hero-visual{min-height:200px;order:-1;display:none}
+  .hero-stats{gap:18px}
+  .layout{grid-template-columns:minmax(0,1fr);padding:30px 0 44px}
+  .side{grid-row:auto}
+  .grid-3,.grid-2,.panel-pair{grid-template-columns:minmax(0,1fr)}
+  .list-compact li{grid-template-columns:56px 1fr;gap:8px}
+  .list-compact .tp{display:none}
+  .deep{padding:20px 16px}
+  .announce .txt{font-size:.78rem}
+  .footer .f-top{grid-template-columns:1fr;gap:22px}
+  #toTop{right:12px;bottom:14px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{animation:none!important;transition:none!important}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- 吸顶公告条 + 页头 -->
+<div class="sticky-bar">
+  <div class="announce" role="region" aria-label="站点公告">
+    <div class="wrap">
+      <span class="tag">更新</span>
+      <span class="txt"><strong>91cao官网</strong> 11月7日调整生活服务入口 12 条，新增「表单填写指南」与「移动端筛选说明」，2 处旧域名已跳转提示页。</span>
+    </div>
+  </div>
+  <header class="header" id="top">
+    <div class="wrap">
+      <a class="brand" href="/#top" aria-label="91cao官网首页">
+        <svg viewBox="0 0 64 64" role="img" aria-label="站点图形标志">
+          <rect width="64" height="64" rx="14" fill="#1f6f5c"/>
+          <path d="M18 40c6-14 14-20 28-22-4 14-12 22-26 26z" fill="#f0c96a"/>
+          <circle cx="24" cy="24" r="4" fill="#ffffff"/>
+          <path d="M22 44c8 2 16 0 22-6" stroke="#ffffff" stroke-width="2.4" fill="none" stroke-linecap="round" opacity=".7"/>
+        </svg>
+        <span class="bname">91cao官网</span>
+      </a>
+      <nav class="nav" id="siteNav" aria-label="主题导航">
+        <a href="/#overview">领域概览</a>
+        <a href="/#picks">精选内容</a>
+        <a href="/#updates">最新更新</a>
+        <a href="/#channels">分类索引</a>
+        <a href="/#deep">深度解析</a>
+        <a href="/#guide">体验指南</a>
+        <a href="/#faq">常见问题</a>
+      </nav>
+      <div class="head-actions">
+        <div class="search-box">
+          <input type="search" id="siteSearch" placeholder="搜索条目或栏目" aria-label="站内本地搜索">
+          <button type="button" id="searchBtn" aria-label="执行搜索">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+          </button>
+          <div class="search-feedback" id="searchFeedback" role="status" aria-live="polite"></div>
+        </div>
+        <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="siteNav" aria-label="展开导航菜单">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+</div>
+
+<!-- 主题首屏 -->
+<section class="hero" aria-label="主题首屏">
+  <div class="wrap hero-inner">
+    <div>
+      <span class="kick"><i></i>日常实用工具与内容导航</span>
+      <h1>91cao官网</h1>
+      <p class="lede">把生活服务入口、表单填写、分类检索和操作说明放在同一套路径里。每个栏目注明适用场景与最近核对日期，遇到改版先看提示页，再判断是链接迁移还是功能下线。</p>
+      <div class="hero-btns">
+        <a class="btn btn-primary" href="/#channels">进入分类索引
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a class="btn btn-ghost" href="/#guide">查看体验指南</a>
+      </div>
+      <div class="hero-stats">
+        <div class="st"><b>11</b><span>主题栏目</span></div>
+        <div class="st"><b>216</b><span>分类条目</span></div>
+        <div class="st"><b>37</b><span>10月调整记录</span></div>
+      </div>
+    </div>
+    <div class="hero-visual" aria-hidden="true">
+      <svg viewBox="0 0 420 340" role="img" aria-label="由路径、卡片与标签构成的原创导航示意图">
+        <defs>
+          <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#dfeee8"/><stop offset="1" stop-color="#f6f1e0"/>
+          </linearGradient>
+        </defs>
+        <rect x="14" y="14" width="392" height="312" rx="22" fill="url(#g1)"/>
+        <path d="M60 250 C120 170 190 210 250 130 S330 90 360 80" stroke="#1f6f5c" stroke-width="3" fill="none" stroke-dasharray="7 8" opacity=".55"/>
+        <rect x="52" y="66" width="140" height="64" rx="12" fill="#ffffff" stroke="#d8e2dd"/>
+        <rect x="68" y="82" width="56" height="8" rx="4" fill="#1f6f5c"/>
+        <rect x="68" y="98" width="96" height="7" rx="3.5" fill="#c3d6cf"/>
+        <rect x="68" y="111" width="74" height="7" rx="3.5" fill="#e3ece8"/>
+        <rect x="222" y="112" width="150" height="80" rx="12" fill="#ffffff" stroke="#d8e2dd"/>
+        <circle cx="246" cy="136" r="9" fill="#1f6f5c"/>
+        <rect x="264" y="130" width="76" height="8" rx="4" fill="#1f6f5c"/>
+        <rect x="240" y="152" width="112" height="7" rx="3.5" fill="#d8e2dd"/>
+        <rect x="240" y="166" width="88" height="7" rx="3.5" fill="#e3ece8"/>
+        <rect x="96" y="216" width="164" height="58" rx="12" fill="#1f6f5c"/>
+        <rect x="114" y="234" width="70" height="8" rx="4" fill="#ffffff"/>
+        <rect x="114" y="250" width="112" height="7" rx="3.5" fill="#9ec9bb"/>
+        <g fill="#c79a3c">
+          <circle cx="330" cy="250" r="7"/><circle cx="356" cy="250" r="7"/><circle cx="382" cy="250" r="7"/>
+        </g>
+        <rect x="300" y="32" width="78" height="26" rx="13" fill="#ffffff" stroke="#d8e2dd"/>
+        <rect x="312" y="42" width="54" height="6" rx="3" fill="#1f6f5c"/>
+      </svg>
+      <span class="float-card fc1">分类条目 · 216</span>
+      <span class="float-card fc2">11月7日 核对</span>
+      <span class="float-card fc3">入口迁移提示</span>
+    </div>
+  </div>
+</section>
+
+<!-- 主内容区：三栏门户 -->
+<div class="wrap layout">
+
+  <!-- 左侧频道导航 -->
+  <aside class="side-nav" aria-label="栏目快捷导航">
+    <div class="sn-title">栏目导航</div>
+    <ul id="sideNavList">
+      <li><a href="/#overview">领域概览</a></li>
+      <li><a href="/#picks">精选内容推荐</a></li>
+      <li><a href="/#updates">最新更新</a></li>
+      <li><a href="/#channels">分类索引</a></li>
+      <li><a href="/#deep">深度解析</a></li>
+      <li><a href="/#guide">体验指南</a></li>
+      <li><a href="/#compare">入口对照</a></li>
+      <li><a href="/#timeline">更新脉络</a></li>
+      <li><a href="/#voices">创作者证言</a></li>
+      <li><a href="/#faq">常见问题</a></li>
+      <li><a href="/#comments">用户评论</a></li>
+      <li><a href="/#news">相关资讯</a></li>
+      <li><a href="/#related">相关推荐</a></li>
+      <li><a href="/#board">本周榜单</a></li>
+    </ul>
+  </aside>
+
+  <!-- 主栏 -->
+  <main>
+
+    <!-- 1 领域概览 -->
+    <section class="section" id="overview">
+      <div class="section-head">
+        <h2>领域概览：这套导航到底解决什么</h2>
+        <span class="sub">核对日期 2026年11月8日</span>
+      </div>
+      <p class="section-desc">日常服务入口分散在官方站、表单页、说明页三层，用户最常见的问题是找错层级：入口页负责跳转，表单页负责收集，说明页负责规则。三者位置不同，改版也各走各的节奏。</p>
+      <div class="grid-3">
+        <div class="card">
+          <span class="pill">入口层</span>
+          <h3><a href="/#channels">生活服务入口合集</a></h3>
+          <p>按缴费、预约、查询、申报四类整理。10月核对时，缴费类有 5 条域名变更，页面顶部统一加了跳转提示。</p>
+          <div class="meta"><span>更新 11月5日</span><span>共 68 条</span></div>
+        </div>
+        <div class="card">
+          <span class="pill gold">表单层</span>
+          <h3><a href="/#guide">在线表单填写要点</a></h3>
+          <p>字段命名不一致是最大的坑。同一份住址信息，在三个页面分别叫「详细地址」「住址」「所在区域」，复制粘贴前先看示例。</p>
+          <div class="meta"><span>更新 11月3日</span><span>示例 14 组</span></div>
+        </div>
+        <div class="card">
+          <span class="pill">说明层</span>
+          <h3><a href="/#deep">规则说明页怎么读</a></h3>
+          <p>规则页通常分「适用对象」「材料清单」「办理时限」三段。时限常写「工作日」，与自然日相差两天以上，排期时要按工作日算。</p>
+          <div class="meta"><span>更新 11月2日</span><span>12 类场景</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2 精选内容推荐 -->
+    <section class="section" id="picks">
+      <div class="section-head">
+        <h2>精选内容推荐</h2>
+        <span class="sub">编辑从 216 条中挑出 4 条，均有近照</span>
+      </div>
+      <p class="section-desc">选取标准只有两个：近两周内实际打开过，且页面结构仍与说明一致。图文不符的条目不进精选。</p>
+      <div class="grid-2">
+        <article class="card">
+          <div class="card-img">
+            <img src="https://picsum.photos/seed/navform2026/560/315" width="560" height="315" loading="lazy" alt="桌面浏览器打开在线表单页面的截图，字段名称与示例提示并列显示" style="object-fit:cover">
+          </div>
+          <span class="pill">表单</span>
+          <h3><a href="/#guide">表单填写指南：从字段命名到提交回执</a></h3>
+          <p>把 14 组常见字段的命名差异排成对照表。回执编号建议当场截图，部分页面关闭后不再显示。</p>
+          <div class="meta"><span>11月6日</span><span>阅读约 6 分钟</span></div>
+        </article>
+        <article class="card">
+          <div class="card-img">
+            <img src="https://picsum.photos/seed/navmobile2026/560/315" width="560" height="315" loading="lazy" alt="手机屏幕显示分类筛选下拉框与折叠菜单的操作界面" style="object-fit:cover">
+          </div>
+          <span class="pill">移动端</span>
+          <h3><a href="/#guide">手机端分类筛选与菜单收起说明</a></h3>
+          <p>筛选框在手机上折叠成下拉，选项顺序与桌面一致。菜单展开后点任一条目会自动收起，返回时保持列表位置。</p>
+          <div class="meta"><span>11月4日</span><span>阅读约 4 分钟</span></div>
+        </article>
+        <article class="card">
+          <span class="pill gold">核对</span>
+          <h3><a href="/#updates">10月入口迁移清单：37 条调整明细</a></h3>
+          <p>21 条链接替换、9 条名称更正、7 条分类合并。替换类只改域名，功能入口位置不变。</p>
+          <div class="meta"><span>11月1日</span><span>含逐条日期</span></div>
+        </article>
+        <article class="card">
+          <span class="pill">答疑</span>
+          <h3><a href="/#faq">跳转提示页出现后该做什么</a></h3>
+          <p>提示页通常给出一行原因。若写「域名调整」，按新地址重试；若写「暂不可用」，别反复刷新，记录时间后再查。</p>
+          <div class="meta"><span>11月2日</span><span>3 种情形</span></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 3 最新更新 -->
+    <section class="section" id="updates">
+      <div class="section-head">
+        <h2>最新更新</h2>
+        <span class="sub">近七日条目变动，按时间倒序</span>
+      </div>
+      <ul class="list-compact">
+        <li><span class="date">11月7日</span><span class="t"><a href="/#guide">新增「表单填写指南」第 6 节：回执截图与编号保存</a></span><span class="tp">指南</span></li>
+        <li><span class="date">11月7日</span><span class="t"><a href="/#channels">缴费类入口 5 条域名替换，旧地址跳转提示页</a></span><span class="tp">分类</span></li>
+        <li><span class="date">11月6日</span><span class="t"><a href="/#compare">入口对照面板补充「工作日 / 自然日」差异说明</a></span><span class="tp">对照</span></li>
+        <li><span class="date">11月5日</span><span class="t"><a href="/#updates">查询类条目重排，按办结时限由短到长排序</a></span><span class="tp">排序</span></li>
+        <li><span class="date">11月4日</span><span class="t"><a href="/#guide">手机端筛选下拉框位置调整，移至列表标题下方</a></span><span class="tp">移动端</span></li>
+        <li><span class="date">11月3日</span><span class="t"><a href="/#deep">深度解析补充「材料清单」三段式读法</a></span><span class="tp">解析</span></li>
+        <li><span class="date">11月2日</span><span class="t"><a href="/#faq">新增 FAQ：跳转提示页出现后的三种处理</a></span><span class="tp">答疑</span></li>
+      </ul>
+    </section>
+
+    <!-- 4 分类索引 -->
+    <section class="section" id="channels">
+      <div class="section-head">
+        <h2>分类索引</h2>
+        <span class="sub">11 个频道，括号内为条目数</span>
+      </div>
+      <p class="section-desc">索引按使用频率排列，缴费与预约类在前。名称尽量用日常说法，与页面里的官方叫法在条目内注明差异。</p>
+      <div class="tag-index">
+        <a href="/#picks">生活缴费入口<span class="n">52</span></a>
+        <a href="/#picks">预约办事指南<span class="n">31</span></a>
+        <a href="/#picks">进度查询方法<span class="n">24</span></a>
+        <a href="/#picks">在线表单填写<span class="n">19</span></a>
+        <a href="/#guide">材料清单对照<span class="n">17</span></a>
+        <a href="/#guide">移动端操作说明<span class="n">15</span></a>
+        <a href="/#deep">规则说明页解读<span class="n">13</span></a>
+        <a href="/#compare">工作日与自然日<span class="n">11</span></a>
+        <a href="/#faq">跳转提示页处理<span class="n">9</span></a>
+        <a href="/#updates">入口迁移记录<span class="n">14</span></a>
+        <a href="/#related">账号与验证码问题<span class="n">8</span></a>
+      </div>
+    </section>
+
+    <!-- 5 深度解析（唯一主体阅读区） -->
+    <section class="section" id="deep">
+      <div class="section-head">
+        <h2>深度解析：入口迁移真正影响的是时间成本</h2>
+        <span class="sub">判断依据截至 2026年11月8日</span>
+      </div>
+      <div class="deep">
+        <p class="lead">多数人以为入口换域名只是换个网址。核对 10 月的 37 条调整后发现，真正被拖慢的是「重填一次表单」和「重新确认时限」这两步，二者加起来平均多花 11 分钟。以下判断可以被反驳，欢迎拿更细的核对记录来对照。</p>
+
+        <h3>一、10 月 37 条调整里，21 条只换域名</h3>
+        <p>10 月 9 日到 10 月 30 日，缴费类 13 条、查询类 8 条做了域名替换。替换后入口位置、表单字段、办结时限均未变化，跳转时多出一个 3 秒左右的提示页。这类调整的实际成本是「多点一次」加「多等三秒」，而不是重做流程。</p>
+        <p>剩下的 16 条不一样：9 条是名称更正，7 条是分类合并。名称更正会直接影响搜索习惯，比如把「事项申报」改成「业务申报」，旧说法在站内搜索里仍需保留映射，否则用户按记忆输入会查不到。</p>
+
+        <h3>二、表单字段变动的成本，远高于域名变动</h3>
+        <p>体验指南里 14 组字段对照显示，同一份住址信息在不同页面出现三种写法。字段改名本身不增加填写量，但会让「上次填过的内容」失效，尤其是保存了草稿的用户。10 月 22 日一组预约类条目调整字段顺序后，草稿恢复功能对旧草稿返回「字段不匹配」，需要手动补填。</p>
+        <div class="judge-box">
+          <b>可核对拆解：</b>把一次入口使用拆成「找到入口 → 打开表单 → 填写 → 提交 → 留存回执」五步。域名替换影响第 1、2 步，各约 3 秒；字段改名影响第 3 步，草稿失效时重填约 6 分钟；时限口径变化影响第 4 步之后的排期判断，误差可达 2 天。三者的量级差在 100 倍以上，因此把入口迁移说成“小改动”并不准确。
+        </div>
+
+        <h3>三、工作日与自然日的口径，是排期误差的主要来源</h3>
+        <p>规则说明页里，「工作日」出现的频率高于「自然日」。10 月 15 日一份查询类说明写「5 个工作日内办结」，同页示例却按「5 天」计算，两处口径冲突。按工作日算，跨周末实测相差 2 天；跨长假相差更多。这不是文字游戏，而是排期能不能赶上的问题。</p>
+        <table class="cmp">
+          <caption style="text-align:left;font-size:.8rem;color:var(--ink-3);padding-bottom:6px">两类时限口径对照（依据 10 月核对记录）</caption>
+          <thead>
+            <tr><th>口径</th><th>页面常见写法</th><th>含周末</th><th>排期建议</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>工作日</td><td>5 个工作日内</td><td>否</td><td>按日历往后推 7 天留余量</td></tr>
+            <tr><td>自然日</td><td>7 天内</td><td>是</td><td>按日历直接加 7 天</td></tr>
+            <tr><td>未注明</td><td>尽快办理</td><td>—</td><td>先查同页示例，再电话确认</td></tr>
+          </tbody>
+        </table>
+
+        <h3>四、说法差异：提示页文案与客服口述不一致</h3>
+        <p>10 月 28 日有用户转述，客服称某入口「永久关闭」，而提示页只写「域名调整，请使用新地址」。这两句话指向不同结论：前者意味着功能下线，后者只是迁移。核对新地址后，功能仍然可用，因此以提示页文案为准。客服口述属于转述层信息，不能单独作为判断依据。</p>
+        <p>类似情况还有「材料清单」的版本差异。10 月 18 日前后两个版本的清单，相差一份「居住证明」。旧版仍可打开，但页面顶部已加「以新版为准」的提示。判断方法很简单：看页面顶部有没有版本日期，有日期就以最新日期那一版为准。</p>
+
+        <h3>五、由此得到的三条可执行结论</h3>
+        <ol>
+          <li>遇到跳转提示页，先读原因再动作。写「域名调整」就换新地址；写「暂不可用」就记录时间，两小时后再试一次。</li>
+          <li>表单填到一半先保存截图。回执编号、提交时间、页面名称三项截全，后续核对能省掉重复描述。</li>
+          <li>排期一律按「工作日」多留两天。页面写工作日就按日历推 7 天，写自然日就直接加天数，不混用。</li>
+        </ol>
+        <p>这三条都不是通用建议，而是从上面对照里推出来的。若后续核对发现某类入口的提示页文案统一改成「永久迁移」，第一条就需要重写。</p>
+      </div>
+    </section>
+
+    <!-- 6 体验指南（编号步骤） -->
+    <section class="section" id="guide">
+      <div class="section-head">
+        <h2>体验指南：从找到入口到留存回执</h2>
+        <span class="sub">按桌面端书写，手机差异单独标注</span>
+      </div>
+      <ol class="steps">
+        <li><b>先确认层级。</b>入口页只负责跳转，表单页才收集信息，说明页写规则。打开后发现没有输入框，多半还在入口层，往下找「进入办理」按钮。</li>
+        <li><b>核对页面顶部的日期。</b>有版本日期的说明页优先看最新一版。10 月 18 日的材料清单差异就是靠日期分辨的。</li>
+        <li><b>填表前看示例。</b>字段旁的灰色示例比字段名更可靠。住址类字段通常给出一行完整示例，照着拆成省、市、区三段。</li>
+        <li><b>提交后立即截图。</b>回执编号、提交时间、页面标题三项齐全。部分页面关闭后不再显示编号，返回列表也查不到细节。</li>
+        <li><b>排期按工作日算。</b>页面写「工作日」就往后推 7 天，写「自然日」就直接加天数。两者不要混着用。</li>
+        <li><b>手机端注意折叠。</b>筛选框在手机上变为下拉，菜单展开后点条目会自动收起；上传按钮在表单底部，不在顶部。</li>
+      </ol>
+      <div class="info-band" style="margin-top:18px">
+        <h3>桌面与手机的三个实际差异</h3>
+        <p>菜单：桌面常驻，手机点按钮展开并自动收起。筛选：桌面为侧边多选，手机为顶部下拉。上传：桌面上传区在表单中部，手机在底部固定区域。三处差异都在 11 月 4 日的调整里同步过说明。</p>
+      </div>
+    </section>
+
+    <!-- 7 入口对照面板 -->
+    <section class="section" id="compare">
+      <div class="section-head">
+        <h2>入口对照：新旧地址与适用场景</h2>
+        <span class="sub">左为新地址，右为旧地址提示</span>
+      </div>
+      <div class="panel-pair">
+        <div class="panel">
+          <h3><span class="dot"></span>新地址可用</h3>
+          <ul>
+            <li>缴费类：域名替换后功能位置不变，表单字段一致</li>
+            <li>查询类：输入编号即可查询，编号长度未变</li>
+            <li>预约类：时段选择仍为 30 分钟一格</li>
+            <li>申报类：材料上传支持 PDF，单文件上限标在按钮旁</li>
+          </ul>
+        </div>
+        <div class="panel warn">
+          <h3><span class="dot"></span>旧地址提示</h3>
+          <ul>
+            <li>提示页停留约 3 秒后跳转，不自动填写任何信息</li>
+            <li>写「域名调整」：换新地址重试即可</li>
+            <li>写「暂不可用」：两小时内别反复刷新</li>
+            <li>不显示回执，历史记录需在新地址重新查询</li>
+          </ul>
+        </div>
+      </div>
+      <p class="section-desc" style="margin-top:14px">对照面板只列 10 月实际核对过的四类。若页面提示文字与面板不一致，以页面当前文案为准，并在评论里留下日期与页面名称。</p>
+    </section>
+
+    <!-- 8 更新脉络时间线 -->
+    <section class="section" id="timeline">
+      <div class="section-head">
+        <h2>更新脉络：十月到十一月初的关键节点</h2>
+        <span class="sub">只收有明确日期的记录</span>
+      </div>
+      <ul class="timeline">
+        <li><span class="tl-date">10月9日</span><br><b>缴费类首批域名替换。</b>13 条入口换域名，功能与字段未动，跳转提示页开始出现。</li>
+        <li><span class="tl-date">10月15日</span><br><b>查询类说明页口径冲突。</b>正文写「5 个工作日」，示例按「5 天」计算，实测跨周末差 2 天。</li>
+        <li><span class="tl-date">10月18日</span><br><b>材料清单两个版本并存。</b>旧版仍可打开，新版少一份居住证明，顶部加「以新版为准」。</li>
+        <li><span class="tl-date">10月22日</span><br><b>预约类字段顺序调整。</b>旧草稿恢复时提示「字段不匹配」，需手动补填。</li>
+        <li><span class="tl-date">10月28日</span><br><b>客服口述与提示页文案不一致。</b>一方称永久关闭，一方写域名调整，核对后功能仍可用。</li>
+        <li><span class="tl-date">11月4日</span><br><b>手机端筛选下拉框移位。</b>从列表上方移到标题下方，选项顺序不变。</li>
+        <li><span class="tl-date">11月7日</span><br><b>缴费类补充 5 条域名替换。</b>累计 21 条替换记录，指南同步新增回执截图一节。</li>
+      </ul>
+    </section>
+
+    <!-- 9 创作者证言 -->
+    <section class="section" id="voices">
+      <div class="section-head">
+        <h2>创作者证言：整理者怎么说</h2>
+        <span class="sub">两位长期核对者的自述，已获同意转述</span>
+      </div>
+      <div class="grid-2">
+        <div class="quote">
+          表格最早只有 40 条，是按自己常办的几件事排的。后来发现同一个入口在手机和电脑上位置不一样，才开始逐条截图对照。10 月那次字段顺序调整，就是靠两张隔一天的截图看出来的。
+          <cite>—— 条目整理者 老周，核对 68 条入口</cite>
+        </div>
+        <div class="quote">
+          我主要盯时限口径。页面上「工作日」三个字看着不起眼，但排期差两天就可能白跑一趟。10 月 15 日那处冲突，是我把正文和示例并排放在一起才发现的，单看一处不会觉得有问题。
+          <cite>—— 说明页核对者 陈默，整理 12 类时限</cite>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10 FAQ -->
+    <section class="section faq" id="faq">
+      <div class="section-head">
+        <h2>常见问题</h2>
+        <span class="sub">按提问频率排列</span>
+      </div>
+      <details>
+        <summary>生活服务导航入口打不开怎么排查？</summary>
+        <div class="ans"><p>先确认浏览器为近两年内的版本，再检查网络是否屏蔽了跳转域名。多数入口点击后会打开新标签页，被拦截时需在地址栏允许弹窗。10 月的入口清单里，有 5 条缴费类链接更换了域名，旧地址会跳到提示页，不会直接失效。</p></div>
+      </details>
+      <details>
+        <summary>使用指南里的操作步骤适用于手机吗？</summary>
+        <div class="ans"><p>步骤按桌面端书写，手机差异集中在三处：菜单收起、筛选折叠、上传位置。分类筛选在手机上变为顶部下拉框，上传按钮在表单底部。触摸操作时长按条目可呼出复制链接选项。</p></div>
+      </details>
+      <details>
+        <summary>分类索引的条目多久更新一次？</summary>
+        <div class="ans"><p>分类索引每周三集中核对，单条失效或迁移在两天内标记。10 月共调整 37 条，其中 21 条是链接替换、9 条名称更正、7 条分类合并。</p></div>
+      </details>
+      <details>
+        <summary>深度解析里的判断会不会过时？</summary>
+        <div class="ans"><p>解析段落标注了依据日期，规则类内容以 2026 年 11 月 8 日前的公开说明为准。涉及第三方政策的部分，若说明后续调整，解析保留旧结论并加时间戳，方便自行对照。</p></div>
+      </details>
+      <details>
+        <summary>在线表单提交后回执丢了怎么办？</summary>
+        <div class="ans"><p>回执编号一般在提交成功页显示，关闭后不再出现。若没截图，可回到入口页的查询栏目，用提交时间与姓名尝试检索。10 月 22 日之后的预约类页面，查询入口位于列表右上角。</p></div>
+      </details>
+      <details>
+        <summary>页面写「5 个工作日」到底怎么算？</summary>
+        <div class="ans"><p>工作日不含周末与法定假日。按日历推算，5 个工作日大约跨 7 天。若说明页同时出现「5 天」的示例，以正文口径为准，并在排期时多留两天余量。</p></div>
+      </details>
+      <details>
+        <summary>评论和体验反馈怎么提交？</summary>
+        <div class="ans"><p>页面底部设有一行反馈框，填写条目名称与遇到的情况即可。编辑在工作日整理，具体条目问题一般两天内回应。涉及账号信息的描述请避免写明文，说明现象即可。</p></div>
+      </details>
+    </section>
+
+    <!-- 11 用户评论 -->
+    <section class="section" id="comments">
+      <div class="section-head">
+        <h2>用户评论</h2>
+        <span class="sub">来自条目反馈与核对记录</span>
+      </div>
+      <div class="cmt">
+        <div class="cmt-item">
+          <div class="cmt-head"><span class="avatar">林</span><span class="cmt-name">林一舟</span><span class="cmt-time">11月7日</span></div>
+          <div class="cmt-body">「表单填写指南」第 4 节的住址拆分示例很实用，照着填一次就过了。就是回执截图那步写得太靠后，建议往前挪。</div>
+        </div>
+        <div class="cmt-item">
+          <div class="cmt-head"><span class="avatar">赵</span><span class="cmt-name">赵北</span><span class="cmt-time">11月6日</span></div>
+          <div class="cmt-body">预约类 10 月 22 日改字段顺序后，我的旧草稿直接恢复失败，只能重填。这事说明里没提前写，算是踩了个坑。</div>
+        </div>
+        <div class="cmt-item">
+          <div class="cmt-head"><span class="avatar">阿</span><span class="cmt-name">阿岚</span><span class="cmt-time">11月5日</span></div>
+          <div class="cmt-body">手机端筛选下拉框移到标题下面之后顺手多了，原来要滑到列表上方才看得到。</div>
+        </div>
+        <div class="cmt-item">
+          <div class="cmt-head"><span class="avatar">周</span><span class="cmt-name">周明</span><span class="cmt-time">11月4日</span></div>
+          <div class="cmt-body">深度解析里「域名替换影响很小、字段改名影响很大」这个判断我认同。上周换域名那次，三秒就跳过去了，什么都没变。</div>
+        </div>
+        <div class="cmt-item">
+          <div class="cmt-head"><span class="avatar">许</span><span class="cmt-name">许晴</span><span class="cmt-time">11月3日</span></div>
+          <div class="cmt-body">10月15日那个「5 个工作日」和「5 天」的冲突确实存在，我按正文算的，结果卡在周末，白等了两天。</div>
+        </div>
+        <div class="cmt-item">
+          <div class="cmt-head"><span class="avatar">老</span><span class="cmt-name">老费</span><span class="cmt-time">11月2日</span></div>
+          <div class="cmt-body">分类索引里缴费类排最前是对的，但「申报」这类一年才用一回的放那么靠后，临时找起来还是得靠搜索。</div>
+        </div>
+        <div class="cmt-item">
+          <div class="cmt-head"><span class="avatar">方</span><span class="cmt-name">方竹</span><span class="cmt-time">11月1日</span></div>
+          <div class="cmt-body">客服说「永久关闭」，提示页写「域名调整」，两句话放一起真让人愣住。后来按新地址进去，功能都在。</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 12 相关资讯 -->
+    <section class="section" id="news">
+      <div class="section-head">
+        <h2>相关资讯</h2>
+        <span class="sub">近两周公开说明与页面变化</span>
+      </div>
+      <div class="grid-3">
+        <div class="card">
+          <span class="pill">说明</span>
+          <h3><a href="/#deep">查询类页面时限写法统一为「工作日」</a></h3>
+          <p>10 月 30 日后新开的查询页不再混用「天」与「工作日」。旧页面保留原写法，顶部加日期标记。</p>
+          <div class="meta"><span>10月30日</span></div>
+        </div>
+        <div class="card">
+          <span class="pill gold">提示页</span>
+          <h3><a href="/#compare">跳转提示页新增一行原因说明</a></h3>
+          <p>原因分为「域名调整」「暂不可用」两类。前者自动跳转，后者停留不跳，需手动关闭。</p>
+          <div class="meta"><span>10月26日</span></div>
+        </div>
+        <div class="card">
+          <span class="pill">表单</span>
+          <h3><a href="/#guide">预约类时段选择仍为 30 分钟一格</a></h3>
+          <p>10 月 22 日前后未变。有用户反映格子太细，选起来费劲，页面暂未提供整点筛选。</p>
+          <div class="meta"><span>10月22日</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 13 相关推荐 -->
+    <section class="section" id="related">
+      <div class="section-head">
+        <h2>相关推荐</h2>
+        <span class="sub">按条目关键词串联</span>
+      </div>
+      <div class="tag-index">
+        <a href="/#guide">表单字段命名差异</a>
+        <a href="/#deep">工作日与自然日换算</a>
+        <a href="/#compare">入口迁移提示页处理</a>
+        <a href="/#guide">手机端菜单收起</a>
+        <a href="/#updates">十月入口调整记录</a>
+        <a href="/#faq">回执编号找回</a>
+        <a href="/#guide">材料清单版本日期</a>
+        <a href="/#comments">预约类字段顺序反馈</a>
+      </div>
+    </section>
+
+    <!-- 14 本周榜单 -->
+    <section class="section" id="board">
+      <div class="section-head">
+        <h2>本周榜单：被打开最多的五类页面</h2>
+        <span class="sub">统计区间 11月1日—11月7日</span>
+      </div>
+      <ul class="list-compact">
+        <li><span class="date">01</span><span class="t"><a href="/#channels">生活缴费入口合集</a> — 单周打开 1,284 次，域名替换后仍有稳定访问</span><span class="tp">入口</span></li>
+        <li><span class="date">02</span><span class="t"><a href="/#guide">在线表单填写要点</a> — 新增回执截图一节后，评论集中在字段示例</span><span class="tp">指南</span></li>
+        <li><span class="date">03</span><span class="t"><a href="/#deep">规则说明页解读</a> — 时限口径段落被反复引用</span><span class="tp">解析</span></li>
+        <li><span class="date">04</span><span class="t"><a href="/#compare">新旧地址对照</a> — 提示页出现后查询量上涨</span><span class="tp">对照</span></li>
+        <li><span class="date">05</span><span class="t"><a href="/#faq">常见问题</a> — 「5 个工作日怎么算」排在首位</span><span class="tp">答疑</span></li>
+      </ul>
+      <div class="info-band" style="margin-top:16px">
+        <h3>关于榜单口径</h3>
+        <p>次数为页面打开计数，同一设备不同日重复计入，去重后不公布比例。榜单只反映使用频率，不代表页面质量排序。</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 右侧栏 -->
+  <aside class="side" aria-label="侧栏补充">
+    <div class="box">
+      <h3>本周高频条目</h3>
+      <ol>
+        <li><a href="/#channels">生活缴费入口合集</a></li>
+        <li><a href="/#guide">在线表单填写要点</a></li>
+        <li><a href="/#deep">规则说明页解读</a></li>
+        <li><a href="/#compare">新旧地址对照</a></li>
+        <li><a href="/#faq">常见问题</a></li>
+      </ol>
+    </div>
+    <div class="box">
+      <h3>相关推荐标签</h3>
+      <div class="rel-tags">
+        <a href="/#deep">工作日换算</a>
+        <a href="/#guide">表单字段示例</a>
+        <a href="/#compare">提示页处理</a>
+        <a href="/#guide">手机端筛选</a>
+        <a href="/#faq">回执编号</a>
+        <a href="/#updates">十月调整</a>
+      </div>
+    </div>
+    <div class="box">
+      <h3>核对说明</h3>
+      <p class="notice">分类条目每周三集中核对。10 月共调整 37 条，11 月 7 日再补 5 条域名替换。日期均按 2026 年 11 月 8 日前的记录标注。</p>
+    </div>
+    <div class="box">
+      <h3>反馈一句</h3>
+      <p class="notice">遇到页面文字与说明不一致，留言时写清页面名称、日期与看到的原话。涉及账号信息请勿写明。</p>
+    </div>
+  </aside>
+
+</div>
+
+<!-- 页脚 -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="f-top">
+      <div>
+        <div class="fbrand">
+          <svg viewBox="0 0 64 64" role="img" aria-label="页脚品牌图形">
+            <rect width="64" height="64" rx="14" fill="#1f6f5c"/>
+            <path d="M18 40c6-14 14-20 28-22-4 14-12 22-26 26z" fill="#f0c96a"/>
+            <circle cx="24" cy="24" r="4" fill="#ffffff"/>
+          </svg>
+          <span>91cao官网</span>
+        </div>
+        <p class="fpos">把分散的入口、表单与规则说明放回同一套路径，让人少走两次冤枉路。</p>
+      </div>
+      <div>
+        <h4>栏目</h4>
+        <ul>
+          <li><a href="/#overview">领域概览</a></li>
+          <li><a href="/#picks">精选内容推荐</a></li>
+          <li><a href="/#updates">最新更新</a></li>
+          <li><a href="/#channels">分类索引</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>深度与指南</h4>
+        <ul>
+          <li><a href="/#deep">深度解析</a></li>
+          <li><a href="/#guide">体验指南</a></li>
+          <li><a href="/#compare">入口对照</a></li>
+          <li><a href="/#timeline">更新脉络</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>互动</h4>
+        <ul>
+          <li><a href="/#faq">常见问题</a></li>
+          <li><a href="/#comments">用户评论</a></li>
+          <li><a href="/#news">相关资讯</a></li>
+          <li><a href="/#board">本周榜单</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="f-note">
+      <span class="dis">示例数据说明：页内条目、数字、日期、评论均为演示用途，部分为按领域特征生成的示例，不构成任何实际服务承诺。入口与说明以对应页面当前文案为准。</span>
+      <span>更新时间 2026年11月8日 · © 2026 91cao官网</span>
+    </div>
+  </div>
+</footer>
+
+<button id="toTop" aria-label="回到顶部">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<script>
+(function(){
+  var header = document.querySelector('.header');
+  var toTop = document.getElementById('toTop');
+  var menuBtn = document.getElementById('menuBtn');
+  var nav = document.getElementById('siteNav');
+
+  function onScroll(){
+    var y = window.scrollY || window.pageYOffset;
+    if (header) header.classList.toggle('scrolled', y > 8);
+    if (toTop) toTop.classList.toggle('show', y > 420);
+  }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  onScroll();
+
+  if (toTop){
+    toTop.addEventListener('click', function(){
+      window.scrollTo({top:0, behavior:'smooth'});
+    });
+  }
+
+  if (menuBtn && nav){
+    menuBtn.addEventListener('click', function(){
+      var open = nav.classList.toggle('open');
+      menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      menuBtn.setAttribute('aria-label', open ? '收起导航菜单' : '展开导航菜单');
+    });
+    nav.addEventListener('click', function(e){
+      if (e.target.tagName === 'A' && window.innerWidth <= 760){
+        nav.classList.remove('open');
+        menuBtn.setAttribute('aria-expanded','false');
+      }
+    });
+  }
+
+  /* 侧栏滚动高亮 */
+  var sideLinks = Array.prototype.slice.call(document.querySelectorAll('#sideNavList a'));
+  var targets = sideLinks.map(function(a){
+    var id = a.getAttribute('href').replace('/#','');
+    return document.getElementById(id);
+  }).filter(Boolean);
+
+  function setActive(){
+    var offset = 130;
+    var current = null;
+    targets.forEach(function(t){
+      if (t.getBoundingClientRect().top - offset <= 0) current = t;
+    });
+    sideLinks.forEach(function(a){
+      var id = a.getAttribute('href').replace('/#','');
+      a.classList.toggle('active', current && current.id === id);
+    });
+  }
+  if (targets.length){
+    window.addEventListener('scroll', setActive, {passive:true});
+    setActive();
+  }
+
+  /* 本地搜索 */
+  var input = document.getElementById('siteSearch');
+  var btn = document.getElementById('searchBtn');
+  var feedback = document.getElementById('searchFeedback');
+
+  function normalize(s){ return (s || '').toLowerCase().replace(/\s+/g,''); }
+
+  function doSearch(){
+    if (!input || !feedback) return;
+    var q = normalize(input.value);
+    if (!q){
+      feedback.textContent = '请输入条目名或栏目关键词。';
+      feedback.classList.add('show');
+      return;
+    }
+    var hits = [];
+    var sections = document.querySelectorAll('main .section');
+    sections.forEach(function(sec){
+      var text = normalize(sec.textContent);
+      if (text.indexOf(q) !== -1){
+        var h2 = sec.querySelector('h2');
+        if (h2) hits.push({name: h2.textContent.trim(), id: sec.id});
+      }
+    });
+    if (!hits.length){
+      feedback.textContent = '没有找到「' + input.value.trim() + '」，换个说法试试，比如「缴费」「表单」「工作日」。';
+      feedback.classList.add('show');
+      return;
+    }
+    var first = hits[0];
+    feedback.innerHTML = '找到 ' + hits.length + ' 个相关板块：<br>' +
+      hits.slice(0,3).map(function(h){
+        return '<a href="/#' + h.id + '">' + h.name + '</a>';
+      }).join('　');
+    feedback.classList.add('show');
+  }
+
+  if (btn) btn.addEventListener('click', doSearch);
+  if (input){
+    input.addEventListener('keydown', function(e){
+      if (e.key === 'Enter'){ e.preventDefault(); doSearch(); }
+    });
+    input.addEventListener('input', function(){
+      if (!input.value) feedback.classList.remove('show');
+    });
+  }
+  document.addEventListener('click', function(e){
+    if (feedback && feedback.classList.contains('show')){
+      if (!e.target.closest('.search-box')) feedback.classList.remove('show');
+    }
+  });
+
+  /* 平滑滚动预留吸顶偏移 */
+  document.querySelectorAll('a[href^="/#"]').forEach(function(a){
+    a.addEventListener('click', function(){
+      var id = a.getAttribute('href').replace('/#','');
+      var el = document.getElementById(id);
+      if (el){
+        setTimeout(function(){ el.scrollIntoView({behavior:'smooth', block:'start'}); }, 0);
+      }
+    });
+  });
+})();
+</script>
+</body>
+          </html>
